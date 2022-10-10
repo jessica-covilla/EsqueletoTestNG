@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="output" value="./output/"/>
+    <parameter name="noReset" value="true"/>
+    <parameter name="rutaImagenReportedemo" value="./imagenes/logodemo.png"/>
+    <parameter name="rutaImagenReporteCalculadora" value="./imagenes/logocalculadora.png"/>
+    <parameter name="platformVersion" value="11"/>
+    <parameter name="autoGrantPermissions" value="true"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="deviceName" value="1e9e4752"/>
+    <parameter name="rutaImagenReporte" value="./imagenes/logomercadolibre.png"/>
+    <classes>
+      <class name="Run.Run">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="calculadora" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Run.Run -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
